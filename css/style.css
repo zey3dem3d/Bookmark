@@ -1,0 +1,85 @@
+body {
+  background-color: #f7ecde;
+}
+h1 {
+  font-family: "Pacifico", cursive;
+  font-weight: 500;
+  font-style: normal;
+  color: rgb(53, 46, 40);
+  line-height: 60px;
+  font-size: 50px;
+  position: relative;
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 70px;
+}
+
+h1:hover::before {
+  height: 70%;
+}
+
+h1::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 100%;
+  z-index: -10;
+  height: 30%;
+  background-color: #fec260;
+  transition: all 0.3s;
+}
+
+h2 {
+  background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 25px;
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  border-top: dotted black 2px;
+  padding-top: 25px;
+}
+
+.form-container,
+table {
+  font-family: "PT Sans Caption", sans-serif;
+}
+
+.visit {
+  background-color: #9eb23b;
+  border: #8a9e23;
+}
+
+.delete {
+  background-color: #eb1d36;
+  border: #eb1d36;
+}
+
+.visit:hover {
+  background-color: #8a9e23;
+}
+
+.delete:hover {
+  background-color: #d30820;
+}
+
+.dotted-line {
+  border-top: dotted black 2px;
+  margin-bottom: 20px;
+}
+
+.changeBgAndColor {
+  background-color: transparent !important;
+  color: #000 !important;
+  border: #000 1px solid;
+}
+
+.changeBgAndColor:hover {
+  border: #000 1px solid !important;
+}
+
+.td-center {
+  padding: 25px !important;
+}
